@@ -223,7 +223,7 @@ IzeyX Design Language v1 is a high-contrast consulting editorial system. It is b
 
 The identity is not decorative. Structure comes from alignment, white space, and a conclusion-first hierarchy. Pages should look roughly 80–90% white or very pale grey, 5–15% deep navy or black, and under 5% electric blue.
 
-The official logo is `assets/triangle-circle-no-words.png` (identical copy: `assets/izeyx-mark.png`). It is a **triangle in a circle, with no words**. Use that PNG for every logo, favicon, app icon, header mark, and slide mark. Never generate, redraw, or replace it.
+The official logo is `assets/triangle-circle-no-words.png` (identical copy: `assets/izeyx-mark.png`). It is a **triangle in a circle, with no words**, on a transparent background. Use that PNG for every logo, favicon, app icon, header mark, and slide mark. Never generate, redraw, or replace it. Never put it on a black square or add a dark ring behind the circle.
 
 Use this system for reports, insight articles, dashboards, landing pages, and 16:9 decks. Do not invent a second palette, a second type family, a second logo, or a SaaS card language.
 
@@ -350,7 +350,7 @@ No thick outlines. No decorative frames. No huge rounded containers.
 - Deck / report: 32–48px, typically top-right or top-left on the dark band or on white
 - Social / OG: the PNG, do not composite text into the circle
 
-Do not redraw it in SVG unless the paths match this PNG exactly. Do not recolor the circle or the triangle. Do not add a drop shadow. Do not put type inside the circle. If a wordmark is needed, it sits beside the PNG, never on it.
+Do not redraw it in SVG unless the paths match this PNG exactly. Do not recolor the circle or the triangle. Do not add a drop shadow, a black square, or a dark ring behind it. Do not put type inside the circle. If a wordmark is needed, it sits beside the PNG, never on it.
 
 **Insight label.** Uppercase Arial Bold 12px, +0.05em, Electric Blue. Sits 16px above a Georgia headline.
 
