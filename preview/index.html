@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IzeyX Design Language v1</title>
+  <link rel="icon" type="image/png" href="../assets/triangle-circle-no-words.png" />
   <link rel="stylesheet" href="../tokens/tokens.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -30,16 +31,46 @@
     .mast-row {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
       gap: 24px;
     }
     .mast-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-family: var(--ix-font-body);
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--ix-white);
+    }
+    .mast-brand img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+    .logo-spec {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .logo-spec img {
+      width: 160px;
+      height: 160px;
+    }
+    .deck-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .deck-top img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      flex-shrink: 0;
     }
     .mast-meta {
       font-size: 12px;
@@ -182,6 +213,7 @@
       .split-2 { grid-template-columns: 1fr; gap: 32px; }
       .deck-grid { grid-template-columns: 1fr; gap: 24px; }
       .deck { aspect-ratio: auto; min-height: 0; padding: 32px 24px 24px; }
+      .logo-spec { grid-template-columns: 1fr; gap: 24px; }
     }
 
     .article-sample { padding: 96px 0; }
@@ -259,7 +291,7 @@
 <body>
   <header class="mast">
     <div class="wrap mast-row">
-      <div class="mast-brand"><img src="../assets/izeyx-mark.png" alt="" width="20" height="20" style="display:inline-block;vertical-align:middle;margin-right:8px;border-radius:50%" />IzeyX</div>
+      <div class="mast-brand"><img src="../assets/triangle-circle-no-words.png" alt="IzeyX" />IzeyX</div>
       <div class="mast-meta">Design Language · v1</div>
     </div>
   </header>
@@ -278,6 +310,7 @@
 
   <div class="wrap">
     <nav class="toc" aria-label="On this page">
+      <a href="#logo">Logo</a>
       <a href="#colour">Colour</a>
       <a href="#type">Type</a>
       <a href="#space">Spacing</a>
@@ -288,6 +321,23 @@
       <a href="#rules">Do / Don’t</a>
     </nav>
   </div>
+
+  <section class="block" id="logo">
+    <div class="wrap">
+      <div class="block-head">
+        <p class="ix-label">Logo</p>
+        <h2 class="ix-h3">Triangle in a circle. No words. This PNG only.</h2>
+        <p class="ix-body">File: <code>assets/triangle-circle-no-words.png</code>. Use it for favicon, header, slides, and app icon. Never generate a replacement, and never put type inside the circle. If a name is needed, set IzeyX in Arial beside the mark.</p>
+      </div>
+      <div class="logo-spec">
+        <img src="../assets/triangle-circle-no-words.png" alt="IzeyX logo: white triangle in a blue circle, no words" />
+        <div>
+          <p class="ix-h6" style="margin-bottom:16px">triangle-circle-no-words.png</p>
+          <p class="ix-body">White geometric triangle. Blue circle. No lettering. Header size 24px. Slide size 32–48px. Favicon as-is. Do not recolor, outline, or redraw.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="block" id="colour">
     <div class="wrap">
@@ -448,7 +498,10 @@
         <p class="ix-body">Georgia 24–28pt for the action title. Arial 12–14pt for evidence. Margins ~0.5–0.7in. Source bottom-left.</p>
       </div>
       <div class="deck">
-        <p class="ix-label">Finding</p>
+        <div class="deck-top">
+          <p class="ix-label">Finding</p>
+          <img src="../assets/triangle-circle-no-words.png" alt="IzeyX" />
+        </div>
         <h3 class="ix-h4" style="margin-top:12px">Digital adoption has doubled since 2022, creating three immediate growth opportunities</h3>
         <div class="deck-grid">
           <div class="deck-stat">
@@ -499,7 +552,7 @@
 
   <footer class="site">
     <div class="wrap">
-      <div class="mast-brand">IzeyX Design Language</div>
+      <div class="mast-brand"><img src="../assets/triangle-circle-no-words.png" alt="IzeyX" />IzeyX Design Language</div>
       <p>v1.0.0 · Georgia + Arial · 4px grid · Deep Blue / Electric Blue / White</p>
     </div>
   </footer>

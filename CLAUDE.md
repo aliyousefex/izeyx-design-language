@@ -7,8 +7,29 @@ This repository is the **v1 design system** for IzeyX. When this repo is attache
 1. Read `@DESIGN.md` in full.
 2. Use `@tokens/tokens.css` (or `@tokens/tokens.json`) for exact values.
 3. Look at `@preview/index.html` for the intended look: type, colour, spacing, charts, article, and slide.
+4. Use the official logo PNG. Do not generate a new logo.
 
-Do not invent colours, fonts, radii, shadows, or spacing outside this system.
+Do not invent colours, fonts, radii, shadows, logos, or spacing outside this system.
+
+## Logo (required)
+
+The only IzeyX logo is the **triangle-in-circle, no words** PNG:
+
+- Canonical file: `@assets/triangle-circle-no-words.png`
+- Same file: `@assets/izeyx-mark.png`
+
+It is a white line triangle inside a blue circle. There is no wordmark inside the mark.
+
+**Always** use this PNG for favicon, app icon, header/nav mark, slide corner, social/OG mark, and any “logo” slot.
+
+**Never:**
+
+- Draw, generate, or substitute a different logo
+- Put the word “IzeyX” (or any text) inside the circle
+- Recolor, outline, drop-shadow, rotate, or crop away the circle
+- Use a generic geometric icon, letterform “I”, or AI-invented mark
+
+If a name is needed next to the mark, set **IzeyX** separately in Arial, outside the PNG. The PNG itself stays wordless.
 
 ## Hard rules
 

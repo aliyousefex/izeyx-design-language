@@ -17,15 +17,26 @@ What Claude should read, in order:
 1. `CLAUDE.md` — hard rules
 2. `DESIGN.md` — tokens + rationale (DESIGN.md format)
 3. `tokens/tokens.css` — CSS variables and primitives
-4. `preview/index.html` — live specimen (article, deck, charts, type, colour)
+4. `assets/triangle-circle-no-words.png` — official logo (triangle in a circle, no words)
+5. `preview/index.html` — live specimen (article, deck, charts, type, colour)
 
 In a Claude Code project, add:
 
 ```
 Follow @DESIGN.md strictly for all UI.
 Use Georgia for headings and Arial for body.
+Use assets/triangle-circle-no-words.png as the logo. Do not generate a new mark.
 Do not invent colours, fonts, or spacing outside the v1 system.
 ```
+
+## Logo
+
+| File | Role |
+| --- | --- |
+| `assets/triangle-circle-no-words.png` | Official PNG logo — triangle in a circle, **no words** |
+| `assets/izeyx-mark.png` | Identical copy of the same file |
+
+Use this PNG for favicons, headers, slides, and app icons. Never redraw it. If a name is needed, set “IzeyX” in Arial beside the mark, not inside it.
 
 ## The system, short
 

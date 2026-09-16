@@ -223,9 +223,9 @@ IzeyX Design Language v1 is a high-contrast consulting editorial system. It is b
 
 The identity is not decorative. Structure comes from alignment, white space, and a conclusion-first hierarchy. Pages should look roughly 80–90% white or very pale grey, 5–15% deep navy or black, and under 5% electric blue.
 
-The brand mark lives at `assets/izeyx-mark.png`: a white line triangle in a blue circle. Use it small in headers and slides. Do not restyle it, add a wordmark lockup that fights Georgia headlines, or flood pages with it.
+The official logo is `assets/triangle-circle-no-words.png` (identical copy: `assets/izeyx-mark.png`). It is a **triangle in a circle, with no words**. Use that PNG for every logo, favicon, app icon, header mark, and slide mark. Never generate, redraw, or replace it.
 
-Use this system for reports, insight articles, dashboards, landing pages, and 16:9 decks. Do not invent a second palette, a second type family, or a SaaS card language.
+Use this system for reports, insight articles, dashboards, landing pages, and 16:9 decks. Do not invent a second palette, a second type family, a second logo, or a SaaS card language.
 
 **Formula, in one pass:** Georgia + Arial. White + `#051C2C` + `#2251FF`. 4px grid. Large editorial headlines. Body at ~150% line height. Generous white space. Thin 1px dividers. Almost-square corners. Almost no shadows. One accent at a time. Charts in blues and greys. Headings that state the conclusion.
 
@@ -343,6 +343,15 @@ No thick outlines. No decorative frames. No huge rounded containers.
 
 **Page.** White canvas. Deep navy is used as a full-bleed header/footer band or as type, not as a wash behind everything.
 
+**Logo.** File: `assets/triangle-circle-no-words.png`. White geometric triangle inside a blue circle. No lettering in the mark. This is the only logo.
+
+- Favicon / app icon: the PNG as-is
+- Header / nav: 20–32px, optionally followed by “IzeyX” in Arial outside the image
+- Deck / report: 32–48px, typically top-right or top-left on the dark band or on white
+- Social / OG: the PNG, do not composite text into the circle
+
+Do not redraw it in SVG unless the paths match this PNG exactly. Do not recolor the circle or the triangle. Do not add a drop shadow. Do not put type inside the circle. If a wordmark is needed, it sits beside the PNG, never on it.
+
 **Insight label.** Uppercase Arial Bold 12px, +0.05em, Electric Blue. Sits 16px above a Georgia headline.
 
 **Headline.** Georgia Regular. Conclusion, not a topic. Colour `#051C2C`.
@@ -373,6 +382,7 @@ No thick outlines. No decorative frames. No huge rounded containers.
 
 - Write headings as conclusions.
 - Keep Georgia for titles and Arial for everything else.
+- Use `assets/triangle-circle-no-words.png` as the logo on every surface that needs a mark.
 - Use the 4px spacing scale only.
 - Leave large margins. Let the page breathe.
 - Use one accent colour at a time, almost always Electric Blue.
@@ -385,6 +395,7 @@ No thick outlines. No decorative frames. No huge rounded containers.
 **Don't**
 
 - Don't use Inter, Roboto, Poppins, Montserrat, Playfair, or any third family.
+- Don't invent a logo, put words in the circle, or swap in a letterform “I”.
 - Don't use 20–30px rounded “SaaS cards”.
 - Don't wrap every block in a bordered tile.
 - Don't flood the page with Electric Blue or cyan.
