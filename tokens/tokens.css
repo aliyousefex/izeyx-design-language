@@ -1,0 +1,254 @@
+/* IzeyX Design Language v1
+   Source of truth: ../DESIGN.md
+   Fonts: Georgia (display) + Arial (body). System stacks; no webfont files. */
+
+:root {
+  /* Core brand */
+  --ix-deep-blue: #051c2c;
+  --ix-electric-blue: #2251ff;
+  --ix-cyan: #00a9f4;
+  --ix-white: #ffffff;
+  --ix-black: #000000;
+
+  /* Text */
+  --ix-text: #333333;
+  --ix-text-muted: #4d4d4d;
+  --ix-mid-grey: #757575;
+  --ix-light-grey: #b3b3b3;
+  --ix-super-light-grey: #d0d0d0;
+  --ix-pale-grey: #e6e6e6;
+  --ix-very-pale-grey: #f0f0f0;
+
+  /* Chart blues — data only */
+  --ix-chart-navy: #034b6f;
+  --ix-chart-blue: #027ab1;
+  --ix-chart-cyan: #39bdf3;
+  --ix-chart-sky: #71d2f1;
+  --ix-chart-ice: #aae6f0;
+  --ix-chart-periwinkle: #afc3ff;
+
+  /* Type */
+  --ix-font-display: Georgia, "Times New Roman", Times, serif;
+  --ix-font-body: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  --ix-display-1-size: 64px;
+  --ix-display-1-lh: 76px;
+  --ix-display-2-size: 60px;
+  --ix-display-2-lh: 72px;
+  --ix-display-3-size: 56px;
+  --ix-display-3-lh: 68px;
+  --ix-display-4-size: 52px;
+  --ix-display-4-lh: 64px;
+  --ix-h1-size: 44px;
+  --ix-h1-lh: 52px;
+  --ix-h2-size: 40px;
+  --ix-h2-lh: 48px;
+  --ix-h3-size: 36px;
+  --ix-h3-lh: 44px;
+  --ix-h4-size: 32px;
+  --ix-h4-lh: 36px;
+  --ix-h5-size: 28px;
+  --ix-h5-lh: 32px;
+  --ix-h6-size: 24px;
+  --ix-h6-lh: 28px;
+  --ix-lead-size: 24px;
+  --ix-lead-lh: 36px;
+  --ix-article-size: 20px;
+  --ix-article-lh: 32px;
+  --ix-body-lg-size: 18px;
+  --ix-body-lg-lh: 28px;
+  --ix-body-size: 16px;
+  --ix-body-lh: 24px;
+  --ix-body-sm-size: 14px;
+  --ix-body-sm-lh: 20px;
+  --ix-label-size: 12px;
+  --ix-label-lh: 16px;
+  --ix-chart-label-size: 11px;
+  --ix-source-size: 11px;
+
+  --ix-tracking-display: -0.02em;
+  --ix-tracking-heading: -0.01em;
+  --ix-tracking-body: 0em;
+  --ix-tracking-label: 0.01em;
+  --ix-tracking-caps: 0.05em;
+
+  /* 4px grid */
+  --ix-space-4: 4px;
+  --ix-space-8: 8px;
+  --ix-space-12: 12px;
+  --ix-space-16: 16px;
+  --ix-space-24: 24px;
+  --ix-space-32: 32px;
+  --ix-space-48: 48px;
+  --ix-space-64: 64px;
+  --ix-space-96: 96px;
+
+  --ix-radius-none: 0px;
+  --ix-radius-sm: 4px;
+
+  --ix-border-light: 1px solid var(--ix-pale-grey);
+  --ix-border-medium: 1px solid var(--ix-light-grey);
+  --ix-border-dark: 1px solid var(--ix-black);
+
+  --ix-shadow-2: 0 2px 4px rgba(5, 28, 44, 0.08);
+  --ix-shadow-4: 0 4px 8px rgba(5, 28, 44, 0.1);
+  --ix-shadow-8: 0 8px 16px rgba(5, 28, 44, 0.12);
+  --ix-shadow-16: 0 16px 32px rgba(5, 28, 44, 0.16);
+
+  --ix-content-article: 720px;
+  --ix-content-wide: 1120px;
+  --ix-page-gutter: 64px;
+}
+
+/* Primitives */
+
+.ix-label {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-label-size);
+  font-weight: 700;
+  line-height: var(--ix-label-lh);
+  letter-spacing: var(--ix-tracking-caps);
+  text-transform: uppercase;
+  color: var(--ix-electric-blue);
+}
+
+.ix-display-1,
+.ix-display-2,
+.ix-display-3,
+.ix-display-4,
+.ix-h1,
+.ix-h2,
+.ix-h3,
+.ix-h4,
+.ix-h5,
+.ix-h6 {
+  margin: 0;
+  font-family: var(--ix-font-display);
+  font-weight: 400;
+  color: var(--ix-deep-blue);
+}
+
+.ix-display-1 { font-size: var(--ix-display-1-size); line-height: var(--ix-display-1-lh); letter-spacing: var(--ix-tracking-display); }
+.ix-display-2 { font-size: var(--ix-display-2-size); line-height: var(--ix-display-2-lh); letter-spacing: var(--ix-tracking-display); }
+.ix-display-3 { font-size: var(--ix-display-3-size); line-height: var(--ix-display-3-lh); letter-spacing: -0.015em; }
+.ix-display-4 { font-size: var(--ix-display-4-size); line-height: var(--ix-display-4-lh); letter-spacing: -0.015em; }
+.ix-h1 { font-size: var(--ix-h1-size); line-height: var(--ix-h1-lh); letter-spacing: var(--ix-tracking-heading); }
+.ix-h2 { font-size: var(--ix-h2-size); line-height: var(--ix-h2-lh); letter-spacing: var(--ix-tracking-heading); }
+.ix-h3 { font-size: var(--ix-h3-size); line-height: var(--ix-h3-lh); letter-spacing: var(--ix-tracking-heading); }
+.ix-h4 { font-size: var(--ix-h4-size); line-height: var(--ix-h4-lh); letter-spacing: var(--ix-tracking-heading); }
+.ix-h5 { font-size: var(--ix-h5-size); line-height: var(--ix-h5-lh); letter-spacing: 0; }
+.ix-h6 { font-size: var(--ix-h6-size); line-height: var(--ix-h6-lh); letter-spacing: 0; }
+
+.ix-lead {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-lead-size);
+  font-weight: 400;
+  line-height: var(--ix-lead-lh);
+  color: var(--ix-text);
+}
+
+.ix-article {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-article-size);
+  line-height: var(--ix-article-lh);
+  color: var(--ix-text);
+}
+
+.ix-body {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-body-size);
+  line-height: var(--ix-body-lh);
+  color: var(--ix-text);
+}
+
+.ix-body-lg {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-body-lg-size);
+  line-height: var(--ix-body-lg-lh);
+  color: var(--ix-text);
+}
+
+.ix-body-sm {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-body-sm-size);
+  line-height: var(--ix-body-sm-lh);
+  letter-spacing: var(--ix-tracking-label);
+  color: var(--ix-text-muted);
+}
+
+.ix-source {
+  margin: 0;
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-source-size);
+  line-height: 16px;
+  letter-spacing: var(--ix-tracking-label);
+  color: var(--ix-mid-grey);
+}
+
+.ix-link {
+  color: var(--ix-electric-blue);
+  text-decoration: none;
+}
+
+.ix-link:hover {
+  text-decoration: underline;
+}
+
+.ix-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ix-space-8);
+  min-height: 40px;
+  padding: var(--ix-space-12) var(--ix-space-24);
+  border: 1px solid transparent;
+  border-radius: var(--ix-radius-sm);
+  font-family: var(--ix-font-body);
+  font-size: var(--ix-body-size);
+  line-height: var(--ix-body-lh);
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ix-btn--primary {
+  background: var(--ix-electric-blue);
+  color: var(--ix-white);
+}
+
+.ix-btn--primary:hover {
+  background: var(--ix-deep-blue);
+}
+
+.ix-btn--secondary {
+  background: var(--ix-white);
+  color: var(--ix-deep-blue);
+  border-color: var(--ix-pale-grey);
+}
+
+.ix-btn--secondary:hover {
+  border-color: var(--ix-deep-blue);
+}
+
+.ix-btn--ghost {
+  background: transparent;
+  color: var(--ix-electric-blue);
+  padding-inline: 0;
+  min-height: auto;
+  border-radius: 0;
+}
+
+.ix-hairline {
+  border: 0;
+  border-top: var(--ix-border-light);
+  margin: 0;
+}
+
+.ix-hairline--medium { border-top: var(--ix-border-medium); }
+.ix-hairline--dark { border-top: var(--ix-border-dark); }

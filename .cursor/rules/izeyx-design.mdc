@@ -1,0 +1,6 @@
+---
+description: IzeyX Design Language v1 — apply on all visual work
+alwaysApply: true
+---
+
+Read DESIGN.md before generating any UI. Use Georgia for headings, Arial for body, the 4px spacing grid, white + #051C2C + #2251FF, 0–4px radii, and 1px hairlines. Headings must state conclusions. Do not introduce other fonts, palettes, pill cards, or decorative shadows.
